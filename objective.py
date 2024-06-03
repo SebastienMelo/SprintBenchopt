@@ -70,7 +70,7 @@ class Objective(BaseObjective):
         # This method can return many metrics in a dictionary. One of these
         # metrics needs to be `value` for convergence detection purposes.
         return dict(
-            value=coverage, interval_size=2 * quantile
+            value=coverage, coverage=coverage, interval_size = 2 * quantile
         )
 
     def get_one_result(self):

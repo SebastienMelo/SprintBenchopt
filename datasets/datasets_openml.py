@@ -5,7 +5,11 @@ with safe_import_context() as import_ctx:
 
 
 DATASETS = {
-    'elevators': 45031
+    'elevators': 45031,
+    'pol': 44122,
+    'rl': 44160,
+    'road_safety': 44161,
+    'wine': 44091,
 }
 
 
