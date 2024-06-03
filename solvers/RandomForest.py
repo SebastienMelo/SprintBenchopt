@@ -8,7 +8,7 @@ with safe_import_context() as import_ctx:
 
 class Solver(OSolver):
 
-    name = 'RandomForest'
+    name = 'RandomForestRegressor'
     requirements = ["pip:optuna"]
 
     def get_model(self):
