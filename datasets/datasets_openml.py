@@ -31,5 +31,4 @@ class Dataset(BaseDataset):
         return dict(
             X=X,
             y=y,
-            categorical_indicator=cat_indicator
         )
