@@ -41,7 +41,6 @@ class Objective(BaseObjective):
 
     def set_data(
                 self, X, y,
-                categorical_indicator
         ):
             # The keyword arguments of this function are the keys of the dictionary
             # returned by `Dataset.get_data`. This defines the benchmark's
@@ -55,7 +54,7 @@ class Objective(BaseObjective):
             self.X_train, self.y_train = X_train, y_train
             self.X_cal, self.y_cal = X_cal, y_cal
             self.X_test, self.y_test = X_test, y_test
-            self.categorical_indicator = categorical_indicator
+            # self.categorical_indicator = categorical_indicator
 
     def evaluate_result(self, model, quantile):
         # The keyword arguments of this function are the keys of the
