@@ -11,7 +11,7 @@ datasets_id = [
 
 names_datasets = [f"names_{id}" for id in datasets_id]
 
-DATASETS = dict(zip(names_datasets, datasets_id))
+DATASETS = dict(zip(datasets_id, names_datasets))
 
 class Dataset(BaseDataset):
 
