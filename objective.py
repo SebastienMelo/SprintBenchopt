@@ -46,7 +46,7 @@ class Objective(BaseObjective):
             # The keyword arguments of this function are the keys of the dictionary
             # returned by `Dataset.get_data`. This defines the benchmark's
             # API to pass data. This is customizable for each benchmark.
-            rng = np.random.RandomState(self.seed)
+            #rng = np.random.RandomState(self.seed)
             X_train_full, X_test, y_train_full, y_test = train_test_split(X, y, test_size=0.33)
             X_train, X_cal, y_train, y_cal = train_test_split(
                 X_train_full, y_train_full, test_size=0.5
